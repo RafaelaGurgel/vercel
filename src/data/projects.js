@@ -4,7 +4,7 @@ const projects = [
     title: "Site Berrini DS Capital",
     description:
       " Desenvolvimento do site institucional da Berrini DS Capital de forma moderna, direta e com foco na conversão do visitante..",
-    technologies: ["React", "Vite", "JavaScript", "CSS"],
+    technologies: ["HTML", "JavaScript", "CSS", "Python"],
     githubUrl: "https://github.com/RafaelaGurgel/berrini",
     liveUrl: "https://berrinidscapital.com.br/"
   },
@@ -12,9 +12,31 @@ const projects = [
     id: 2,
     title: "Curso Infinity Full-Stack",
     description:
-      "Alguns projetos desenvolvidos durante o curso Infinity com HTML/CSS/JavaScript.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/RafaelaGurgel/Curso-Infinity-FUll-Stack",
+      "Projeto Final do curso Infinity School Full Stack:Site com autenticação",
+    technologies: [
+  // 🔹 Frontend
+  "HTML",
+  "CSS",
+  "CSS customizado (tema dark)",
+  "JavaScript",
+  "React.js",
+  "React Router DOM",
+  "Vite",
+
+  // 🔹 Backend
+  "Node.js",
+  "Express.js",
+  "Prisma ORM",
+  "SQLite",
+  "JWT (JSON Web Token)",
+  "Bcrypt",
+
+  // 🔹 Ferramentas Extras
+  "Git / GitHub",
+  "Nodemon",
+  "Axios"
+],
+    githubUrl: "https://github.com/RafaelaGurgel/ProvaFinal",
     liveUrl: "https://infinityschool.com.br/"
   },
   {
@@ -31,7 +53,19 @@ const projects = [
     title: "Mini RPG",
     description:
       "Mini RPG em Python, com sistema de batalha, evolução de personagem e itens.",
-    technologies: ["Python"],
+    technologies: [
+  // 🔹 Frontend
+  "HTML",
+  "CSS",
+  "JavaScript",
+
+  // 🔹 Ferramentas de Desenvolvimento
+  "Vite",
+  "Node.js",
+  "npm",
+  "PowerShell"
+]
+,
     githubUrl: "https://github.com/RafaelaGurgel/MiniRPG",
     liveUrl: "https://minirpg.vercel.app/"
   },
