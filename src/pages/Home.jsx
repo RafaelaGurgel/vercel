@@ -2,60 +2,96 @@ import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects";
 import GithubAvatar from "../components/GithubAvatar";
 import ContactLinks from "../components/ContactLinks";
+import { FaCode, FaGraduationCap, FaRocket } from "react-icons/fa";
 
 export default function Home() {
+  const skills = [
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Responsive Design",
+  ];
+
   return (
     <main className="home">
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section className="hero">
-        <GithubAvatar username="rafaelagurgel" />
-
-        <h1>Rafaela Gurgel</h1>
-        <h2>Desenvolvedora Frontend</h2>
-
-        <p>
-          Crio interfaces modernas usando React, JavaScript, HTML e CSS.
-          Focada em aprendizado contínuo e na construção de projetos
-          bem estruturados e funcionais.
-        </p>
+        <div className="hero-card">
+          <img
+            src="https://github.com/rafaelagurgel.png"
+            alt="Rafaela Gurgel"
+          />
+          <h1>Rafaela Gurgel</h1>
+          <h2>Desenvolvedora Frontend</h2>
+          <p>
+            Desenvolvo interfaces modernas com{" "}
+            <strong>React, JavaScript e TypeScript</strong>, focada em
+            performance, código limpo e experiência do usuário.
+          </p>
+        </div>
       </section>
 
-      {/* SOBRE */}
+      {/* ABOUT SECTION */}
       <section id="about" className="about-section">
-        <h3>Sobre mim</h3>
-        <p>
-          Olá! Sou a Rafaela, apaixonada por tecnologia e desenvolvimento Frontend.
-          Estou em transição de carreira para a área de desenvolvimento web,
-          com foco em React, JavaScript, HTML e CSS. Busco minha primeira
-          oportunidade como Desenvolvedora Frontend Júnior, onde posso
-          aplicar meus conhecimentos em projetos reais e continuar
-          aprendendo com equipes experientes.
-        </p>
+        <div className="section-header">
+          <h3>
+            <FaGraduationCap /> Sobre
+          </h3>
+        </div>
+
+        <div className="section-content">
+          <p>
+            Formada em <strong>Full Stack pela Infinity School</strong> com
+            inglês avançado. Apaixonada por criar soluções web intuitivas e
+            eficientes.
+          </p>
+
+          <div className="skills">
+            <h4>Tecnologias</h4>
+            <div className="skills-grid">
+              {skills.map((skill) => (
+                <span key={skill} className="skill-tag">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <p>
+            Buscando{" "}
+            <strong>oportunidade como Desenvolvedora Frontend Júnior</strong>{" "}
+            para contribuir com projetos reais e evoluir profissionalmente.
+          </p>
+        </div>
       </section>
 
-      {/* PROJETOS */}
-      <section id="projects">
-        <h3>Projetos</h3>
+      {/* PROJECTS SECTION */}
+      <section id="projects" className="projects-section">
+        <div className="section-header">
+          <h3>
+            <FaRocket /> Projetos
+          </h3>
+        </div>
 
         <div className="projects-grid">
           {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              githubUrl={project.githubUrl}
-              liveUrl={project.liveUrl}
-            />
+            <ProjectCard key={project.id} {...project} />
           ))}
         </div>
       </section>
 
-      {/* CONTATO */}
+      {/* CONTACT SECTION */}
       <section id="contact" className="contact-section">
-        <h3>Contato & Redes</h3>
-        <p>Você pode me encontrar nas redes abaixo:</p>
-        <ContactLinks />
+        <div className="section-header">
+          <h3>Contato</h3>
+        </div>
+
+        <div className="section-content">
+          <p>Disponível para oportunidades e colaborações.</p>
+          <ContactLinks />
+        </div>
       </section>
     </main>
   );

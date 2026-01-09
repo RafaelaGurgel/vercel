@@ -1,12 +1,12 @@
 const projects = [
   {
     id: 1,
-    title: "Portfólio em React",
+    title: "Site Berrini DS Capital",
     description:
-      "Portfólio pessoal desenvolvido do zero utilizando React e Vite, com componentização e boas práticas.",
+      " Desenvolvimento do site institucional da Berrini DS Capital de forma moderna, direta e com foco na conversão do visitante..",
     technologies: ["React", "Vite", "JavaScript", "CSS"],
-    githubUrl: "https://github.com/RafaelaGurgel/portfolio-rafaela",
-    liveUrl: "https://SEUDEPLOY.vercel.app"
+    githubUrl: "https://github.com/RafaelaGurgel/berrini",
+    liveUrl: "https://berrinidscapital.com.br/"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
       "Projeto desenvolvido durante o curso Infinity com HTML/CSS/JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/RafaelaGurgel/Curso-Infinity-FUll-Stack",
-    liveUrl: ""
+    liveUrl: "https://infinityschool.com.br/"
   },
   {
     id: 3,
@@ -35,15 +35,7 @@ const projects = [
     githubUrl: "https://github.com/RafaelaGurgel/MiniRPG",
     liveUrl: "https://minirpg.vercel.app/"
   },
-  {
-    id: 5,
-    title: "SQL – Provas",
-    description:
-      "Scripts e consultas SQL aplicados em desafios de prova.",
-    technologies: ["SQL"],
-    githubUrl: "https://github.com/RafaelaGurgel/ProvaSQL",
-    liveUrl: ""
-  }
+  
 ];
 
 export default projects;
