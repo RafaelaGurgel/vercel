@@ -3,25 +3,45 @@ export default function ProjectCard({
   description,
   technologies,
   githubUrl,
-  liveUrl
+  liveUrl,
 }) {
   return (
-    <article className="project-card">
-      <h4>{title}</h4>
-      <p>{description}</p>
+    <article className="project-card" role="article">
+      <header className="project-header">
+        <h4 className="project-title">{title}</h4>
+      </header>
 
-      <ul className="tech-list">
-        {technologies.map((tech, index) => (
-          <li key={index}>{tech}</li>
+      <p className="project-description">{description}</p>
+
+      <ul className="tech-list" aria-label="Tecnologias utilizadas">
+        {technologies.map((tech) => (
+          <li key={tech} className="tech-item">
+            {tech}
+          </li>
         ))}
       </ul>
 
-      <div className="project-links">
-        <a href={githubUrl} target="_blank">GitHub</a>
+      <footer className="project-links">
+        <a
+          href={githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Repositório do projeto ${title}`}
+        >
+          GitHub
+        </a>
+
         {liveUrl && (
-          <a href={liveUrl} target="_blank">Demo</a>
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Versão online do projeto ${title}`}
+          >
+            Demo
+          </a>
         )}
-      </div>
+      </footer>
     </article>
   );
 }
