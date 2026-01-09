@@ -12,7 +12,7 @@ const projects = [
     id: 2,
     title: "Curso Infinity Full-Stack",
     description:
-      "Projeto desenvolvido durante o curso Infinity com HTML/CSS/JavaScript.",
+      "Alguns projetos desenvolvidos durante o curso Infinity com HTML/CSS/JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/RafaelaGurgel/Curso-Infinity-FUll-Stack",
     liveUrl: "https://infinityschool.com.br/"
